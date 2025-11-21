@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Web Cloud Computing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .tab {
+      overflow: hidden;
+      border-bottom: 1px solid #ccc;
+    }
+    .tab button {
+      background-color: inherit;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 20px;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    .tab button.active {
+      background-color: #ccc;
+    }
+    .tabcontent {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Pagina Web Cloud Computing</h2>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Pestaña1')" id="defaultOpen">Pestaña 1</button>
+  <button class="tablinks" onclick="openTab(event, 'Pestaña2')">Pestaña 2</button>
+</div>
+
+<div id="Pestaña1" class="tabcontent">
+  <h3>Pestaña 1: Conceptos e Imagenes</h3>
+  <h3>¿Qué es Cloud Computing? </h3>
+
+  <p>El cloud computing es la entrega de servicios informáticos (como servidores, almacenamiento, software y análisis) a través de Internet, a menudo llamada "la nube". En lugar de poseer y administrar su propia infraestructura física, las organizaciones pueden acceder a estos recursos bajo demanda, pagando solo por lo que usan, lo que ofrece flexibilidad, escalabilidad y costos operativos reducidos. </p>
+
+|   <img src="descarga.jpg" >
+  
+   <h3>¿Qué es SaaS, PaaS e IaaS?  </h3>
+
+  <p>SaaS, PaaS e IaaS son los tres principales modelos de servicios en la nube que difieren en el nivel de control y la gestión que ofrecen: SaaS (Software como Servicio) proporciona aplicaciones completas listas para usar, PaaS (Plataforma como Servicio) ofrece un entorno para desarrollar y desplegar aplicaciones, e IaaS (Infraestructura como Servicio) brinda recursos básicos como servidores y almacenamiento. </p>
+
+    <img src="descarga1.png" >
+
+
+   <h3>¿Qué es Virtualización?   </h3>
+
+  <p>La virtualización es la creación de versiones simuladas de recursos físicos de computación, como servidores, almacenamiento, redes o sistemas operativos, usando software para ejecutar múltiples entornos virtuales en una única máquina física. Esto permite a las empresas usar sus recursos de hardware de manera más eficiente, ya que un solo servidor puede ejecutar múltiples sistemas operativos o aplicaciones de forma aislada, optimizando así el rendimiento y reduciendo costos.  </p>
+
+    <img src="descarga (1).jpg" >
+
+
+   <h3>¿Qué es Docker?   </h3>
+
+  <p>Docker es una plataforma de código abierto que utiliza contenedores para crear, implementar y ejecutar aplicaciones de manera rápida y estandarizada. Los contenedores empaquetan una aplicación con todo lo que necesita para ejecutarse (código, bibliotecas y dependencias), creando un entorno aislado que funciona de la misma forma sin importar dónde se ejecute, ya sea en una máquina local o en la nube.   </p>
+
+    <img src="descarga.png" >
+
+</div>
+
+<div id="Pestaña2" class="tabcontent">
+  <h3>Pestaña 2:Contenido e Imagen</h3>
+  <h3>Anydesk</h3>
+
+  <p>AnyDesk es un software de acceso remoto que permite a los usuarios conectarse y controlar computadoras y dispositivos móviles de forma remota. Se utiliza para tareas como la resolución de problemas técnicos, el soporte de TI, o para trabajar en equipo de forma colaborativa, ya que permite ver y controlar otra pantalla a través de internet. La conexión requiere que el otro dispositivo acepte la conexión a través de un código único.  </p>
+
+  <img src="descarga (1).png" >
+
+
+  <h3>TeamViewer</h3>
+
+  <p>TeamViewer es un software de acceso remoto y control que permite a los usuarios conectarse y controlar ordenadores y dispositivos móviles desde cualquier lugar del mundo. Se utiliza para el soporte técnico a distancia, el teletrabajo, la colaboración en línea y el acceso a archivos. Su función principal es habilitar la interacción con un equipo remoto como si se estuviera físicamente frente a él.   </p>
+
+  <img src="descarga (2).png" >
+
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  // Ocultar todo el contenido
+  var tabcontent = document.getElementsByClassName("tabcontent");
+  for (var i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Quitar la clase 'active' de todos los botones
+  var tablinks = document.getElementsByClassName("tablinks");
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Mostrar la pestaña seleccionada y marcar el botón como activo
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Abrir por defecto la primera pestaña
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
